@@ -19,5 +19,5 @@ do
   git add "${single_file}"
   git commit -m "Changes in file: ${single_file}"
   echo "Current commit: $(git rev-parse --verify HEAD)"
-  git push
+  git push 2> /dev/null
 done
