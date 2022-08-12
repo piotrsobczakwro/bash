@@ -1,6 +1,6 @@
 #/bin/bash
 
-# Script: git-check-commit_by_sha.sh
+# Script: git-check-commit_by_sha.sh 
 
 echo "Executing script: $0"
 
