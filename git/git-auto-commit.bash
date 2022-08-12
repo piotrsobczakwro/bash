@@ -15,5 +15,6 @@ do
   git add "$single_file" 
   git commit -m "Changes in file: $single_file" >/dev/null
   echo "[+] Current commit: $(git rev-parse --verify HEAD)"
-  git push 1>/dev/null
+  git push 
+  echo "[+] Pushed to repository exit:$?"
 done
