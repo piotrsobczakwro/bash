@@ -1,5 +1,7 @@
 #/bin/bash
 
+cd ..
+
 files=$(git ls-files)
 
 echo "" > ../README.md
