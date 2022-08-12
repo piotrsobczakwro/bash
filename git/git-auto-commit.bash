@@ -12,8 +12,8 @@ files=$(git status --short | awk {'print $2'})
 for single_file in ${files}; 
 do 
   echo "[+] Commiting: $single_file"
-  git add "${single_file}" 
-  git commit -m "Changes in file: ${single_file}" >/dev/null
+  git add "$single_file" 
+  git commit -m "Changes in file: $single_file" >/dev/null
   echo "[+] Current commit: $(git rev-parse --verify HEAD)"
   git push >/dev/null
 done
