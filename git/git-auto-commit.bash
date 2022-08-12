@@ -5,7 +5,7 @@
 echo "Executing script: $0"
 
 # Can be shorten as git pull 
-git pull
+git pull >/dev/null
 
 files=$(git status --short | awk {'print $2'})
 
@@ -15,6 +15,6 @@ do
   git add "$single_file" 
   git commit -m "Changes in file: $single_file" >/dev/null
   echo "[+] Current commit: $(git rev-parse --verify HEAD)"
-  git push 
+  git push >/dev/null
   echo "[+] Pushed to repository exit:$?"
 done
