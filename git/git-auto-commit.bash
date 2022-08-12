@@ -7,9 +7,6 @@ echo "Executing script: $0"
 # Can be shorten as git pull 
 git pull >/dev/null
 
-# Upgrade README.md
-./git-update-readme.bash
-
 files=$(git status --short | awk {'print $2'})
 
 for single_file in ${files}; 
