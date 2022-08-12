@@ -17,7 +17,7 @@ for single_file in ${files};
 do 
   echo "${files} to commit"
   git add "${single_file}"
-  git commit -m "Changes in file: ${single_file}"
+  git commit -m "Changes in file: ${single_file}" 2>/dev/null
   echo "Current commit: $(git rev-parse --verify HEAD)"
   git push 2> /dev/null
 done
