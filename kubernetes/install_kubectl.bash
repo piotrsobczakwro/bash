@@ -11,3 +11,5 @@
         fi
      
     }
+
+install_kubectl
